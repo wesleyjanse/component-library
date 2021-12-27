@@ -1,5 +1,8 @@
 {
   "name": "@wesleyjanse/component-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/wesleyjanse"
+  },
   "version": "0.0.1",
   "description": "A React component library",
   "scripts": {
