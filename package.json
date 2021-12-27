@@ -3,12 +3,12 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/wesleyjanse"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React component library",
   "scripts": {
     "rollup": "rollup -c"
   },
-  "author": "",
+  "author": "Wesley Janse",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
