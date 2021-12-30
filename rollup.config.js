@@ -10,7 +10,6 @@ const packageJson = require("./package.json");
 
 export default [
   {
-    preserveModules: true,
     input: "src/index.ts",
     output: [
       {
@@ -22,6 +21,12 @@ export default [
         file: packageJson.module,
         format: "esm",
         sourcemap: true,
+      },
+      {
+        format: "es",
+        dir: "dist",
+        preserveModules: true,
+        preserveModulesRoot: "src",
       },
     ],
     plugins: [
@@ -37,6 +42,6 @@ export default [
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.scss$/],
+    external: [/\.(css|less|scss)$/],
   },
 ];
